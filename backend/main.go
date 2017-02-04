@@ -7,11 +7,6 @@ import (
     "gopkg.in/mgo.v2/bson"
 )
 
-type Person struct {
-    Name string
-    Phone string
-}
-
 func main() {
     session, err := mgo.Dial("127.0.0.1")
     if err != nil {
